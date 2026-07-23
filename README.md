@@ -1,42 +1,50 @@
 # WA Bhangra Association Website
 
-## Put this website into GitHub Desktop
+This is a responsive, editable static website created from the supplied organisation profile, logo, president card and event posters.
 
-1. Download and extract this ZIP file.
-2. Open GitHub Desktop.
-3. Select the repository: `WABHANGRAASSOCIATION`.
-4. Click `Repository` → `Show in Explorer`.
-5. Copy all files and folders from the extracted project into the repository folder.
-6. Return to GitHub Desktop.
-7. In Summary, type: `Add complete website`.
-8. Click `Commit to main`.
-9. Click `Push origin`.
+## Open locally
 
-## Publish it
+Double-click `index.html`, or open the folder with VS Code and use the Live Server extension.
 
-1. On GitHub.com, open the repository.
-2. Go to `Settings` → `Pages`.
-3. Under `Build and deployment`, choose `GitHub Actions`.
-4. Open the `Actions` tab.
-5. Wait for `Deploy WA Bhangra Association Website` to show a green tick.
-6. Return to `Settings` → `Pages` to see the live website address.
+## Edit text
 
-## Edit website text
+Open `index.html` in any text editor. All website wording is directly inside the HTML and organised by section:
 
-Homepage:
-- `app/page.js`
+- Hero
+- About
+- Programs
+- Perth City Bhangra Cup
+- Leadership
+- Contact
 
-Other pages:
-- `app/about/page.js`
-- `app/president/page.js`
-- `app/committee/page.js`
-- `app/events/page.js`
-- `app/gallery/page.js`
-- `app/sponsors/page.js`
-- `app/contact/page.js`
+## Replace images
 
-Design:
-- `app/globals.css`
+Put replacement images in the `assets` folder and keep the same filenames, or change the image paths in `index.html`.
 
-Images:
-- `public/images`
+## Change colours and design
+
+Open `styles.css`. The main colour settings are at the top under `:root`:
+
+- `--paper`
+- `--ink`
+- `--gold`
+- `--orange`
+- `--pink`
+- `--navy`
+
+## Make the contact form work
+
+The current form is a visual demo. Connect it to Jotform, Formspree, Netlify Forms or your preferred service.
+
+## Publish online
+
+Easy options:
+
+1. Netlify Drop — drag the full folder into Netlify.
+2. GitHub Pages — upload the folder to a repository and enable Pages.
+3. Vercel — import the folder as a static project.
+4. Your own hosting — upload all files while preserving the folder structure.
+
+## Important
+
+Before publishing, review the contact details, event venue, registration links, social media links and privacy requirements.
