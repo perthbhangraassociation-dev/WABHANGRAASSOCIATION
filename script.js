@@ -31,6 +31,18 @@ document.querySelectorAll("[data-poster]").forEach(button=>{
 document.querySelector(".modal-close").addEventListener("click",()=>modal.close());
 modal.addEventListener("click",e=>{if(e.target===modal)modal.close()});
 
+document.querySelectorAll(".gallery-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    const modal = document.getElementById("poster-modal");
+    const modalImage = document.getElementById("modal-image");
+
+    modalImage.src = item.dataset.image;
+    modalImage.alt = "Gallery photo preview";
+
+    modal.showModal();
+  });
+});
+
 
 const enquiryForm=document.getElementById("enquiry-form");
 if(enquiryForm){
