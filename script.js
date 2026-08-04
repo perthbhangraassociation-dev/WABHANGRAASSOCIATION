@@ -43,13 +43,3 @@ document.querySelectorAll(".gallery-item").forEach((item) => {
   });
 });
 
-
-const enquiryForm=document.getElementById("enquiry-form");
-if(enquiryForm){
-  enquiryForm.addEventListener("submit",event=>{
-    event.preventDefault();
-    const status=document.getElementById("form-status");
-    status.textContent="Thank you. The enquiry form is ready; online delivery will be connected when the Association's custom email is added.";
-    enquiryForm.reset();
-  });
-}
